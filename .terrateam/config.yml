@@ -12,3 +12,9 @@ automerge:
   enabled: true
   delete_branch: true
   require_explicit_apply: true
+hooks:
+  plan:
+    pre:
+      - type: env
+        name: TG_PROVIDER_CACHE
+        cmd: ['echo', '1']
