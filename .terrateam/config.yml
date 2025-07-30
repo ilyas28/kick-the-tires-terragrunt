@@ -8,3 +8,7 @@ dirs:
   '.':
     when_modified:
       file_patterns: []
+automerge:
+  enabled: true
+  delete_branch: true
+  require_explicit_apply: true
